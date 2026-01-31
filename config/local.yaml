@@ -1,0 +1,6 @@
+environment: "local"
+connection_strings:
+  auth: ""
+http:
+  addr: "localhost"
+  port: 42069
