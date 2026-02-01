@@ -1,0 +1,11 @@
+version: "2"
+sql:
+  - name: "users"
+    engine: "sqlite"
+    queries: "internal/modules/users/db/queries"
+    schema: "migrations/users"
+    gen:
+      go:
+        package: "users"
+        out: "internal/modules/users/db"
+        emit_pointers_for_null_types: true

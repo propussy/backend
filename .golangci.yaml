@@ -1,0 +1,14 @@
+version: "2"
+
+linters:
+  enable:
+    - sloglint
+    - lll
+    - misspell
+    - perfsprint
+    - prealloc
+    - unconvert
+
+formatters:
+  enable:
+    - gofumpt
