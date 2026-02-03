@@ -10,7 +10,8 @@ public static class DependencyInjection
     extension (IServiceCollection services) {
         public IServiceCollection AddDbContext(IConfiguration configuration)
         {
-            return services.AddDbContext<UsersDbContext>(options => options.UseNpgsql());
+            return services.AddDbContext<UsersDbContext>(options => options.UseNpgsql(
+                configuration.GetConnectionString("user-module")));
         }
     }
 }
