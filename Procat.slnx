@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/host/">
+    <Project Path="host/Procat.AppHost/Procat.AppHost.csproj" />
+    <Project Path="host/Procat.ServiceDefaults/Procat.ServiceDefaults.csproj" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src/Procat.WebAPI/Procat.WebAPI.csproj" />
   </Folder>
