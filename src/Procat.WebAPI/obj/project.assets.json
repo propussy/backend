@@ -8,25 +8,26 @@
     "net10.0": []
   },
   "packageFolders": {
-    "/home/tng/.nuget/packages/": {}
+    "/home/aahmadzada/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/tng/Work/sandbox/procart/src/Procat.WebAPI/Procat.WebAPI.csproj",
+      "projectUniqueName": "/home/aahmadzada/Desktop/propussy/backend/src/Procat.WebAPI/Procat.WebAPI.csproj",
       "projectName": "Procat.WebAPI",
-      "projectPath": "/home/tng/Work/sandbox/procart/src/Procat.WebAPI/Procat.WebAPI.csproj",
-      "packagesPath": "/home/tng/.nuget/packages/",
-      "outputPath": "/home/tng/Work/sandbox/procart/src/Procat.WebAPI/obj/",
+      "projectPath": "/home/aahmadzada/Desktop/propussy/backend/src/Procat.WebAPI/Procat.WebAPI.csproj",
+      "packagesPath": "/home/aahmadzada/.nuget/packages/",
+      "outputPath": "/home/aahmadzada/Desktop/propussy/backend/src/Procat.WebAPI/obj/",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
-        "/home/tng/.nuget/NuGet/NuGet.Config"
+        "/home/aahmadzada/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "/usr/lib64/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -52,6 +53,7 @@
         "targetAlias": "net10.0",
         "centralPackageVersions": {
           "Microsoft.EntityFrameworkCore": "10.0.2",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.0",
           "Ulid": "1.4.1"
         },
         "imports": [
@@ -73,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/tng/.local/share/mise/installs/dotnet/10.0.101/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
