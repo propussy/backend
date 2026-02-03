@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Procat.WebAPI/Procat.WebAPI.csproj" />
+  </Folder>
+  <Folder Name="/src/UsersModule/">
+    <Project Path="src/UsersModule/Procat.UsersModule/Procat.UsersModule.csproj" />
+  </Folder>
+</Solution>

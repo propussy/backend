@@ -1,3 +1,8 @@
 bin/
-tmp/
-.idea/
+obj/
+
+.idea
+.vscode
+.vs
+
+*.user
