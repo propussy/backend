@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Procat.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f41395c6f6c6df77f42110e97da24dbdbd4b7beb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7e948a4fab5883b4382aaa8a8d7e6413c08b0c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Procat.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Procat.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
