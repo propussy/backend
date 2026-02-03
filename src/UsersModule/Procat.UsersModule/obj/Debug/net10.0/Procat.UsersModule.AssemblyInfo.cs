@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Procat.UsersModule")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05a617c2c0b84ec001598753ad65743d43ac7136")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+970b29d768f73295d3873c690d2e5885610e5165")]
 [assembly: System.Reflection.AssemblyProductAttribute("Procat.UsersModule")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Procat.UsersModule")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

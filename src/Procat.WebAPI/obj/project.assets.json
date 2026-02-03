@@ -19,6 +19,7 @@
       "packagesPath": "/home/tng/.nuget/packages/",
       "outputPath": "/home/tng/Work/sandbox/procart/src/Procat.WebAPI/obj/",
       "projectStyle": "PackageReference",
+      "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
         "/home/tng/.nuget/NuGet/NuGet.Config"
       ],
@@ -49,6 +50,10 @@
     "frameworks": {
       "net10.0": {
         "targetAlias": "net10.0",
+        "centralPackageVersions": {
+          "Microsoft.EntityFrameworkCore": "10.0.2",
+          "Ulid": "1.4.1"
+        },
         "imports": [
           "net461",
           "net462",
