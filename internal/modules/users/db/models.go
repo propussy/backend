@@ -2,7 +2,7 @@
 // versions:
 //   sqlc v1.30.0
 
-package users
+package db
 
 type Role struct {
 	ID   string

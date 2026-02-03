@@ -3,7 +3,7 @@
 //   sqlc v1.30.0
 // source: users.sql
 
-package users
+package db
 
 import (
 	"context"
@@ -11,12 +11,12 @@ import (
 
 const getUser = `-- name: GetUser :one
 SELECT id, email, phone, first_name, last_name, date_of_birth, licence_url, passport_url, international_driving_permit_url, created_at FROM users
-WHERE id = ?
+WHERE id = ?1
 LIMIT 1
 `
 
-func (q *Queries) GetUser(ctx context.Context, id string) (User, error) {
-	row := q.db.QueryRowContext(ctx, getUser, id)
+func (q *Queries) GetUser(ctx context.Context, userid string) (User, error) {
+	row := q.db.QueryRowContext(ctx, getUser, userid)
 	var i User
 	err := row.Scan(
 		&i.ID,
@@ -35,10 +35,17 @@ func (q *Queries) GetUser(ctx context.Context, id string) (User, error) {
 
 const listUsers = `-- name: ListUsers :many
 SELECT id, email, phone, first_name, last_name, date_of_birth, licence_url, passport_url, international_driving_permit_url, created_at FROM users
+LIMIT ?2
+OFFSET ?1
 `
 
-func (q *Queries) ListUsers(ctx context.Context) ([]User, error) {
-	rows, err := q.db.QueryContext(ctx, listUsers)
+type ListUsersParams struct {
+	Offset int64
+	Limit  int64
+}
+
+func (q *Queries) ListUsers(ctx context.Context, arg ListUsersParams) ([]User, error) {
+	rows, err := q.db.QueryContext(ctx, listUsers, arg.Offset, arg.Limit)
 	if err != nil {
 		return nil, err
 	}

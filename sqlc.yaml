@@ -6,6 +6,5 @@ sql:
     schema: "migrations/users"
     gen:
       go:
-        package: "users"
+        package: "db"
         out: "internal/modules/users/db"
-        emit_pointers_for_null_types: true
