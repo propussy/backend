@@ -25,6 +25,8 @@ builder.Services.AddFastEndpoints().SwaggerDocument();
 
 var app = builder.Build();
 
+app.UseUsersModule();
+
 app.UseExceptionHandler();
 app.UseFastEndpoints();
 app.UseOpenApi(c => c.Path = "/openapi/{documentName}.json");
