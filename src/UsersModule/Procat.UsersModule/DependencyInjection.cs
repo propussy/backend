@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,10 +15,23 @@ public static class DependencyInjection
             services.AddDbContext<UsersDbContext>(options =>
                 options.UseNpgsql(configuration.GetConnectionString("user-module"))
             );
-            
-            services.AddMediatR(options => options.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly));
-            
+
+            services.AddMediatR(options =>
+                options.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly)
+            );
+
             return services;
+        }
+    }
+
+    extension(WebApplication app)
+    {
+        public void UseUsersModule()
+        {
+            using var scope = app.Services.CreateScope();
+            using var context = scope.ServiceProvider.GetRequiredService<UsersDbContext>();
+
+            context.Database.Migrate();
         }
     }
 }
