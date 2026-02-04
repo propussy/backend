@@ -4,6 +4,7 @@
     <Project Path="host/Procat.ServiceDefaults/Procat.ServiceDefaults.csproj" />
   </Folder>
   <Folder Name="/src/">
+    <Project Path="src/Procat.SharedKernel/Procat.SharedKernel.csproj" />
     <Project Path="src/Procat.WebAPI/Procat.WebAPI.csproj" />
   </Folder>
   <Folder Name="/src/UsersModule/">

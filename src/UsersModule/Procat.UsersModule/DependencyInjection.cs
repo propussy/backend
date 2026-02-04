@@ -7,11 +7,13 @@ namespace Procat.UsersModule;
 
 public static class DependencyInjection
 {
-    extension (IServiceCollection services) {
-        public IServiceCollection AddDbContext(IConfiguration configuration)
+    extension(IServiceCollection services)
+    {
+        public IServiceCollection AddUsersModule(IConfiguration configuration)
         {
-            return services.AddDbContext<UsersDbContext>(options => options.UseNpgsql(
-                configuration.GetConnectionString("user-module")));
+            return services.AddDbContext<UsersDbContext>(options =>
+                options.UseNpgsql(configuration.GetConnectionString("user-module"))
+            );
         }
     }
 }

@@ -8,4 +8,8 @@
   <ItemGroup>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../Procat.SharedKernel/Procat.SharedKernel.csproj" />
+  </ItemGroup>
 </Project>
