@@ -1,4 +1,3 @@
-using LanguageExt;
 using Procat.UsersModule.Models;
 
 namespace Procat.UsersModule.Features.Users;
@@ -18,12 +17,13 @@ public static class UserExtensions
                 u.BirthDate,
                 u.LicenceUrl,
                 u.PassportUrl,
-                u.InternationalDrivingPermitUr,
+                u.InternationalDrivingPermitUrl,
                 u.CreatedAt,
                 u.UpdatedAt
             );
         }
     }
+    
     extension(IQueryable<User> users)
     {
         public IQueryable<UserDto> ToDto()

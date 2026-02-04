@@ -11,9 +11,13 @@ public static class DependencyInjection
     {
         public IServiceCollection AddUsersModule(IConfiguration configuration)
         {
-            return services.AddDbContext<UsersDbContext>(options =>
+            services.AddDbContext<UsersDbContext>(options =>
                 options.UseNpgsql(configuration.GetConnectionString("user-module"))
             );
+            
+            services.AddMediatR(options => options.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly));
+            
+            return services;
         }
     }
 }

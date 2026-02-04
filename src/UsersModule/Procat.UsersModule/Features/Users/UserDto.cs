@@ -9,7 +9,7 @@ public sealed record UserDto(
     DateTime BirthDate,
     string LicenceUrl,
     string PassportUrl,
-    string InternationalDrivingPermitUr,
+    string InternationalDrivingPermitUrl,
     DateTimeOffset CreatedAt,
     DateTimeOffset? UpdatedAt
 );

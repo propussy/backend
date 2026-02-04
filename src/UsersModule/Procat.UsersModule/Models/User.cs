@@ -18,11 +18,11 @@ public class User
     
     public required string PassportUrl { get; set; }
     
-    public required string InternationalDrivingPermitUr { get; set; }
+    public required string InternationalDrivingPermitUrl { get; set; }
     
     public DateTimeOffset CreatedAt { get; set; }
     
     public DateTimeOffset? UpdatedAt { get; set; }
 
-    public ICollection<Role> Roles { get; set; } = [];
+    public ICollection<Role> Roles { get; private set; } = [];
 }
